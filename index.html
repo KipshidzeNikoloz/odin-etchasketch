@@ -1,25 +1,34 @@
 <html>
     <head>
         <link rel='stylesheet' href="style.css">
+        <div class = 'header'>
+            <h1 class= 'title' >Etch-This-Sketch</h1>
+            <p class = 'snarkyPara'>The limit is your creativity, and the limited tools</p>
+        </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"> 
     </head>
     <body>
 
     <div class = 'gameBody'>
         <div class = 'settings'>
-            <button class = 'resetButton'>Reset</button>
-            <button class = 'colorButton' data-color = 'rainbow'>Rainbow</button>
-            <button class = 'colorButton' data-color = 'black'>Black</button>
-            <button class = 'colorButton' data-color = 'white'>White</button>
-            <button class = 'colorButton' data-color = 'grey'>Grey</button>
+            <div class = 'buttons'>
+                <button class = 'resetButton'>Reset</button>
+                <button class = 'colorButton' data-color = 'rainbow'>Rainbow</button>
+                <button class = 'colorButton' data-color = 'black'>Black</button>
+                <button class = 'colorButton' data-color = 'white'>White</button>
+                <button class = 'colorButton' data-color = 'grey'>Erase</button>
+            </div>
             <div class="slidecontainer">
                 <input type="range" min="1" max="50" value="5" class="slider" id="myRange">
-                <p>Grid: <span id = 'gridNumber'></span></p>
+                <p class = 'gridSize'>Grid: <span id = 'gridNumber'></span></p>
             </div>
         </div>
-
-        <div class = "container">
-            <div class = "grid">
-
+        <div class = gameContainer>
+            <div class = "container">
+                <div class = "grid">
+                </div>
             </div>
         </div>
     </div>
